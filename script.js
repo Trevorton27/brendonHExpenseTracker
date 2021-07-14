@@ -5,6 +5,7 @@ function addExpense(event) {
 
   const expenseRow = document.getElementById('expenseTable').insertRow(1);
   
+  //Chunk 1
   const expenseDate = expenseRow.insertCell(0);
   const expenseDescription = expenseRow.insertCell(1);
   const expenseAmount = expenseRow.insertCell(2);
@@ -24,6 +25,7 @@ function addExpense(event) {
   expenseDeleteButton.appendChild(image);
   expenseDeleteButton.addEventListener('click', () => expenseRow.remove());
 
+  //Chunk 2
   expenseDate.textContent = getFormatedDate(document.getElementById('expenseDate').value);
   expenseDescription.textContent = document.getElementById('expenseDescription').value;
   expenseAmount.textContent = formatter.format(document.getElementById('expenseAmount').value);
