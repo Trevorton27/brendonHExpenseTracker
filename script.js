@@ -37,5 +37,7 @@ function addExpense(event) {
 
 function getFormatedDate(date) {
   [year, month, day] = date.split("-");
-  return `${month}/${day}/${year}`;
+  if (year == "") {
+    return "";
+  } else return `${month}/${day}/${year}`;
 }
