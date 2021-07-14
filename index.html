@@ -18,7 +18,8 @@
       <input type="date" placeholder="Date" name="Date" id="expenseDate">
       <input type="text" placeholder="Expense Description" name="Description" id="expenseDescription"
       >
-      <input type="number" name="Amount" id="expenseAmount" placeholder="$0.00">
+      <input type="text" placeholder="Where?" name="Where" id='expenseWhere'>
+      <input type="number" step="0.0001" name="Amount" id="expenseAmount" placeholder="$0.00">
       <select name="Category" id="expenseCategory" placeholder="Food">
         <option value="Housing">Housing</option>
         <option value="Transportation">Transportation</option>
@@ -34,6 +35,7 @@
         <tr>
           <th>Date</th>
           <th>Description</th>
+          <th>Where</th>
           <th>Amount</th>
           <th>Category</th>
           <th>Delete?</th>

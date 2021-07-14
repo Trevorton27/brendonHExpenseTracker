@@ -7,9 +7,10 @@ function addExpense(event) {
   
   const expenseDate = expenseRow.insertCell(0);
   const expenseDescription = expenseRow.insertCell(1);
-  const expenseAmount = expenseRow.insertCell(2);
-  const expenseCategory = expenseRow.insertCell(3);
-  const expenseDelete = expenseRow.insertCell(4);
+  const expenseWhere = expenseRow.insertCell(2);
+  const expenseAmount = expenseRow.insertCell(3);
+  const expenseCategory = expenseRow.insertCell(4);
+  const expenseDelete = expenseRow.insertCell(5);
   
   let formatter = new Intl.NumberFormat('us-US', {
     style: 'currency',
@@ -26,6 +27,7 @@ function addExpense(event) {
 
   expenseDate.textContent = getFormatedDate(document.getElementById('expenseDate').value);
   expenseDescription.textContent = document.getElementById('expenseDescription').value;
+  expenseWhere.textContent = document.getElementById('expenseWhere').value;
   expenseAmount.textContent = formatter.format(document.getElementById('expenseAmount').value);
   expenseCategory.textContent = document.getElementById('expenseCategory').value;
   expenseDelete.appendChild(expenseDeleteButton);

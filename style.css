@@ -3,6 +3,7 @@ div#container {
   border: 10px solid #80475E;
   background-color: #34344a;
   color: #f0f757;
+  padding: 5%;
 }
 
 #expenseTable {
