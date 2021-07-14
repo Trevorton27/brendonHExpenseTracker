@@ -4,6 +4,7 @@ function addExpense(event) {
   event.preventDefault();
 
   const expenseRow = document.getElementById('expenseTable').insertRow(1);
+  
   const expenseDate = expenseRow.insertCell(0);
   const expenseDescription = expenseRow.insertCell(1);
   const expenseAmount = expenseRow.insertCell(2);
