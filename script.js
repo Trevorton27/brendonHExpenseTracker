@@ -44,7 +44,7 @@ function renderTotal() {
   const rows = document.getElementById('expenseTable').rows.length
   let list = 0;
   for (let i = rows - 1; i > 0; i--) {
-    list += parseFloat(document.getElementById('expenseTable').rows[i].cells[3].innerText.substring(1))
+    list += parseFloat(document.getElementById('expenseTable').rows[i].cells[3].innerText.substring(1).replace(",",""))
   }
   document.getElementById("total").textContent = formatter.format(list)
 }
