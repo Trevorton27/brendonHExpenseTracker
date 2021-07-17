@@ -1,19 +1,44 @@
 div#container {
   text-align: center;
-  border: 10px solid #80475E;
+  border: 10px solid #80475e;
   background-color: #34344a;
   color: #f0f757;
   padding: 5%;
 }
 
 #expenseTable {
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-background-color: #c89b7b;
-table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #c89b7b;
+  table-layout: fixed;
 }
 
 #expenseTable > thead > tr:nth-child(1) {
-background-color: #cc5a71;
+  background-color: #cc5a71;
+}
+
+input {
+  height: 2.5em;
+}
+
+select {
+  height: 2.9em;
+}
+
+#submit {
+  background-color: #f0f757;
+  color: #34344a;
+  padding: 0.6em;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#deleteButton {
+  color: #fb1614;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  padding: 5px;
 }
